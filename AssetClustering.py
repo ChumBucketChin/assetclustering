@@ -10,7 +10,8 @@ from matplotlib.widgets import Slider
 Overview:
 This program fetches daily asset prices over a given period from yfinance api and clusters assets by their z-score normalized log price change
 time series using k-medoids with dynamic time warping (DTW) to capture similar shapes under misalignment. Additionally, this program allows
-for the analysis of an optimal k for k-medoids using the elbow method and silhouette coefficient. 
+for the analysis of an optimal k for k-medoids by visualizing the elbow method and silhouette coefficient for values of k, as well as the visualization
+of clusters formed by k-medoids.
 '''
 
 '''Variable Properties, change global variable or tickers as desired'''
@@ -532,5 +533,6 @@ while True:
     except KeyboardInterrupt:
         print("\nStopped")
         break
+
 
 
