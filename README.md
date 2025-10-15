@@ -11,6 +11,6 @@ Dependencies:
 
 Usage Instructions:
 1. Open AssetClustering.py
-2. Adjust GLOBAL variables as needed
-3. Adjust the list 'tickers' as needed
+2. Inside the code, adjust GLOBAL variables as needed
+3. Inside the code, adjust the list 'tickers' as needed
 4. Run the code and follow the prompts
