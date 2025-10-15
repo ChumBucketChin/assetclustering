@@ -16,11 +16,11 @@ for the analysis of an optimal k for k-medoids using the elbow method and silhou
 '''Variable Properties, change global variable or tickers as desired'''
 
 #Global variables to adjust
-GLOBAL_KMEDOID_SAMPLES = 5000
-GLOBAL_W_FACTOR = 0.05
-GLOBAL_PRICE_PERIOD = "1y"
-GLOBAL_LOG_DATA = True
-GLOBAL_AGGREGATE_WEEKLY = False
+GLOBAL_KMEDOID_SAMPLES = 5000   #Number of samples for k-medoids (Reduce samples if program is slow)
+GLOBAL_W_FACTOR = 0.05          #Factor to calculate sakoe band half-width
+GLOBAL_PRICE_PERIOD = "1y"      #Period of prices for assets
+GLOBAL_LOG_DATA = True          #Take log of data
+GLOBAL_AGGREGATE_WEEKLY = False #Aggregate data for weekly changes (enable if program is slow due to too much data)
 
 '''ADJUST LIST OF TICKERS HERE'''
 tickers = ["KO", "PEP", "SPGI", "MCO", "MSCI", "META", "MSFT", "GOOGL"]
@@ -532,4 +532,5 @@ while True:
     except KeyboardInterrupt:
         print("\nStopped")
         break
+
 
