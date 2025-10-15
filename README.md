@@ -1,5 +1,10 @@
 # assetclustering
 
+About:
+This program clusters assets based on daily price changes taken from yfinance API. It clusters assets using the K-medoids algorithm with Dynamic Time Warp to account for misaligned time series.
+You can select different k for clustering, perform analysis on optimal k for k-medoids with the visualizations for elbow method and silhouette scores, and visualize optimal clusterings for a 
+specific K.
+
 Dependencies:
 - yfinance
 - numpy
